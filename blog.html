@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/tailwind.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta
+      name="google-site-verification"
+      content="0b8cZwUonuHrANTiKBCslDhhRuzAzlDiaoq6uvxVXHI"
+    />
+  </head>
+
+  <body class="bg-white">
+    <!-- navbar goes here -->
+    <nav class="bg-gray-100 fixed w-full z-30 top-0 ">
+      <div class="max-w-8xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <!-- logo -->
+            <div>
+              <a
+                href="#"
+                class="
+                  flex
+                  items-center
+                  py-5
+                  px-2
+                  text-gray-700
+                  hover:text-black
+                "
+              >
+                <svg
+                  class="h-14"
+                  width="50px"
+                  height="50px"
+                  viewBox="0 0 128 128"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <path
+                      id="2"
+                      d="m27.791 115.22l-26.25-45.47c-2.054-3.558-2.054-7.941 0-11.499l26.25-45.47c2.054-3.558 5.85-5.75 9.959-5.75h52.5c4.108 0 7.904 2.192 9.959 5.75l26.25 45.47c2.054 3.558 2.054 7.941 0 11.499l-26.25 45.47c-2.054 3.558-5.85 5.749-9.959 5.749h-52.5c-4.108 0-7.904-2.192-9.958-5.749"
+                    />
+                    <clipPath id="1"><use xlink:href="#2" /></clipPath>
+                    <linearGradient
+                      id="0"
+                      gradientUnits="userSpaceOnUse"
+                      y1="7.03"
+                      x2="0"
+                      y2="120.79"
+                    >
+                      <stop stop-color="#4387fd" />
+                      <stop offset="1" stop-color="#4683ea" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="m27.791 115.22l-26.25-45.47c-2.054-3.558-2.054-7.941 0-11.499l26.25-45.47c2.054-3.558 5.85-5.75 9.959-5.75h52.5c4.108 0 7.904 2.192 9.959 5.75l26.25 45.47c2.054 3.558 2.054 7.941 0 11.499l-26.25 45.47c-2.054 3.558-5.85 5.749-9.959 5.749h-52.5c-4.108 0-7.904-2.192-9.958-5.749"
+                    fill="url(#0)"
+                  />
+                  <path
+                    opacity=".07"
+                    clip-path="url(#1)"
+                    d="M124.05 82.86 89.63 48.44 64 37 39.5 50.31 38.473 79.65 81.02 122.19 97.67 122.04z"
+                  />
+                  <path
+                    d="m89.03 47.993l-23.676-13.67c-.835-.482-1.864-.482-2.699 0l-23.676 13.67c-.835.482-1.349 1.373-1.349 2.337v27.339c0 .964.514 1.855 1.349 2.337l23.676 13.67c.835.482 1.864.482 2.699 0l23.676-13.67c.835-.482 1.349-1.373 1.349-2.337v-27.339c0-.964-.514-1.855-1.349-2.337m-3.248 27.06l-8.26-4.769v-12.563l-12.198 7.04v14.09l10.879-6.281 8.26 4.769-20.459 11.812-20.459-11.812 8.26-4.769 10.88 6.281v-14.09l-12.198-7.04v12.563l-8.26 4.769v-23.624l20.459-11.812v9.538l-10.88 6.281 12.198 7.04 12.198-7.04-10.879-6.281v-9.538l20.459 11.812v23.624"
+                    fill="#ffffff"
+                  />
+                </svg>
+                <span class="font-bold">Dmag Dev</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- primary nav -->
+          <div class="hidden md:flex items-center space-x-1 text-blue-500 font-bold mb-4">
+            <a href="index.html" class="py-5 px-3  hover:text-gray-500"
+              >HOME</a
+            >
+            <a href="#" class="py-5 px-3  hover:text-gray-500"
+              >ABOUT</a
+            >
+            <a href="#" class="py-5 px-3  hover:text-gray-500"
+              >TEAM</a
+            >
+            <a href="#" class="py-5 px-3  hover:text-gray-500"
+              >PORTOFOLIO</a
+            >
+            <a href="#" class="py-5 px-3  hover:text-gray-500"
+              >PATENARIAT</a
+            >
+            <a href="blog.html" class="py-5 px-3  hover:text-gray-500"
+              >BLOGS</a
+            >
+            <a href="#" class="py-5 px-3  hover:text-gray-900"
+              >CONTACT</a
+            >
+          </div>
+
+          <!-- secondary nav -->
+          <div class="hidden md:flex items-center space-x-1 px-6">
+            <a href="" class="py-5 px-3">Login</a>
+            <a
+              href=""
+              class="
+                py-2
+                px-3
+                bg-yellow-400
+                hover:bg-yellow-300
+                text-yellow-900
+                hover:text-yellow-800
+                rounded
+                transition
+                duration-300
+              "
+              >Signup</a
+            >
+          </div>
+
+          <!-- mobile button goes here -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu flex flex-col text-center md:hidden">
+        <a
+          href="#"
+          class="
+            block
+            py-2
+            px-4
+            text-sm
+            hover:bg-gray-200
+            text-blue-400
+            hover:text-black
+          "
+          >HOME</a
+        >
+        <a
+          href="#"
+          class="
+            block
+            py-2
+            px-4
+            text-sm
+            hover:bg-gray-200
+            text-blue-400
+            hover:text-black
+          "
+          >ABOUT</a
+        >
+        <a
+          href="#"
+          class="
+            block
+            py-2
+            px-4
+            text-sm
+            hover:bg-gray-200
+            text-blue-400
+            hover:text-black
+          "
+          >TEAM</a
+        >
+        <a
+          href="#"
+          class="
+            block
+            py-2
+            px-4
+            text-sm
+            hover:bg-gray-200
+            text-blue-400
+            hover:text-black
+          "
+          >PORTOFOLIO</a
+        >
+        <a
+          href="#"
+          class="
+            block
+            py-2
+            px-4
+            text-sm
+            hover:bg-gray-200
+            text-blue-400
+            hover:text-black
+          "
+          >PATENARIAT</a
+        >
+        <a
+          href="#"
+          class="
+            block
+            py-2
+            px-4
+            text-sm
+            hover:bg-gray-200
+            text-blue-400
+            hover:text-black
+          "
+          >BLOGS</a
+        >
+        <a
+          href="#"
+          class="
+            block
+            py-2
+            px-4
+            text-sm
+            hover:bg-gray-200
+            text-blue-400
+            hover:text-black
+          "
+          >CONTACT</a
+        >
+      </div>
+    </nav>
+
+      
+      <div class="py-32 text-center">
+       
+
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        <h2 class="font-extrabold text-4xl">Body</h2>
+        v
+        v
+        <h2 class="font-extrabold text-4xl">Body</h2>
+
+      </div>
+
+     
+
+  
+
+      <!-- footer -->
+        <footer>
+          <div class="bg-cover bg-center" style="background-image: url('');">
+            <div class="bg-gray-200">
+                <div class="container mx-auto px-6 lg:px-20 py-12">
+                    <div class="lg:flex">
+                        <div class="w-full lg:w-2/3">
+                            <div class="lg:flex">
+                                <div class="w-full mb-12 lg:mb-0 lg:w-1/2">
+                                    <h2 
+                                        class="font-bold text-xl text-black mb-4">Web2tailwind</h2>
+                                    <p class="text-gray-400">
+                                        Web2tailwind.com is a site for developer, student and learner,
+                                        where they can grab
+                                        hundreds of various html component code and try online as fast as posible without...
+                                    </p>
+                                    <div class="flex mt-6">
+                                        <a href=""><i 
+                                          class="flex items-center justify-center h-12 w-12 mr-1 rounded-full fab fill-current text-black text-xl fa fa-facebook social-icons">
+                                        </i></a>
+                                        <a href=""><i 
+                                          class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fas fill-current text-black text-xl fa fa-envelope social-icons">
+                                        </i></a>
+                                        <a href="">
+                                          <i 
+                                            class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fab fill-current text-black text-xl fa fa-instagram social-icons">
+                                          </i>
+                                        </a>
+                                        <a href=""><i 
+                                          class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fab fill-current text-black text-xl fa fa-twitter social-icons">
+                                        </i></a>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2 lg:flex lg:px-6 ">
+                                    <div class="w-full mb-6 lg:mb-0 lg:w-1/2">
+                                        <h2 
+                                            class="font-bold text-black mb-4">
+                                            Useful Links</h2>
+                                        <ul class="text-gray-500 text-sm">
+                                            <li class="pt-1 pb-2">Home</li>
+                                            <li class="pt-1 pb-2">About us</li>
+                                            <li class="pt-1 pb-2">Services</li>
+                                            <li class="pt-1 pb-2">Terms of Services</li>
+                                            <li class="pt-1 pb-2">Privacy Policy</li>
+                                        </ul>
+                                    </div>
+                                    <div class="w-full mb-6 lg:mb-0 lg:w-1/2">
+                                        <h2 
+                                            class="font-bold text-black mb-4">
+                                            Our sevices</h2>
+                                        <ul class="text-gray-500 text-sm">
+                                            <li class="pt-1 pb-2">Web Design</li>
+                                            <li class="pt-1 pb-2">Web Development</li>
+                                            <li class="pt-1 pb-2">Product Management</li>
+                                            <li class="pt-1 pb-2">Marketing</li>
+                                            <li class="pt-1 pb-2">Graphics Design</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/3">
+                            <h2  class=" font-bold text-black mb-4">
+                                Our Newsletter
+                            </h2>
+                            <div class="text-gray-900 mb-8">
+                                Subscribe our weely Newsletter to get regular updates about our blogs.
+                            </div>
+                            <div class="flex">
+                                <input type="text" class="rounded-l px-2 focus:outline-none">
+                                <button class="text-gray-200 rounded-r hover:bg-blue-500 px-4 py-2 focus:outline-none"
+                                    style="background-color: #4c00ff;">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer bottom -->
+            <div style=" background-color: rgba(5, 5, 0, 0.8);">
+                <div class="container mx-auto px-6 lg:px-20 py-2">
+                    <div class="flex justify-center text-gray-300 mb-1">
+                        © 2021  <span class="font-bold">Logitech.</span> 2021 All right reserved.
+                    </div>
+                    <div class="flex font-light justify-center text-gray-500 text-sm">
+                        <p>Designed by <span class="font-bold">dmag</span></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </body>
+
+    <!-- script -->
+    <script>
+      // grab everything we need
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      // add event listeners
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
